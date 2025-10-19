@@ -36,8 +36,8 @@ function Navbar() {
     }
     ]
     return (
-        <div className="flex gap-5 justify-between p-5">
-            <div className="flex gap-8 items-center">
+        <div className="flex gap-5 justify-between p-4 navbarColor" >
+            <div className="flex gap-8 items-center pl-10">
                 <img src={CloneFlix} className="w-[70px] md:w-[100px] object-cover cursor-pointer" />
                 <div className="flex gap-8 items-center">
                     {menu.map((item) => (
@@ -52,7 +52,9 @@ function Navbar() {
                 <IoMdNotificationsOutline className="text-[35px] " />
                 <img src={Clove} className="w   -[35px] h-[35px] rounded-md" />
             </div>
+            <div className="p-2">
             <GoTriangleDown className="text-[18px] "/>
+            </div>
             </div>
         </div>
     )

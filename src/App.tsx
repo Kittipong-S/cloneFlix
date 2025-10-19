@@ -2,6 +2,7 @@
 
 
 import Navbar from './component/header/Navbar'
+import Hotmovietoday from './component/HotMovie/Hotmovietoday'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Hotmovietoday/>
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
