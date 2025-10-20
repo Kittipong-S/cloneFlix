@@ -18,7 +18,7 @@ function Hotmovietoday() {
   return (
     <div className=''>
     
- <img src={IMAGE_BASE_URL+"https://image.tmdb.org/t/p/original/7QirCB1o80NEFpQGlQRZerZbQEp.jpg"} className=''/>
+ <img src={IMAGE_BASE_URL+"https://image.tmdb.org/t/p/original/7QirCB1o80NEFpQGlQRZerZbQEp.jpg"} className='relative'/>
 
   
     </div>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
 /* @import 'tailwind-scrollbar-hide/v4'; */
 
 body {
@@ -7,4 +8,5 @@ body {
 
 .navbarColor {
 background-color:#030712;
+
 }
