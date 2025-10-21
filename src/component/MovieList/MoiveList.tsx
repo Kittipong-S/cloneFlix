@@ -1,5 +1,5 @@
 import { useEffect, useState,  } from 'react'
-import MovieCard from './MovieCard';
+// import MovieCard from './MovieCard';
 import GlobalApi from '../../servic/service'
 import HrmovieCard from './HrmovieCard';
 // import { HiChevronRight, HiChevronLeft } from "react-icons/hi2";
@@ -29,10 +29,13 @@ function MoiveList({genreId}) {
                     <>
                     <HrmovieCard movie={item} />
                     {/* <MovieCard movie={item} /> */}
+                    
                    </>
 
                 ))}
             </div> 
+            
+
   )
 }
 
