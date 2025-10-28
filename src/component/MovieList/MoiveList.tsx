@@ -2,6 +2,7 @@ import { useEffect, useState,  } from 'react'
 // import MovieCard from './MovieCard';
 import GlobalApi from '../../servic/service'
 import HrmovieCard from './HrmovieCard';
+import MovieCardHover from './MovieCardHover';
 // import { HiChevronRight, HiChevronLeft } from "react-icons/hi2";
 
 
@@ -23,11 +24,11 @@ function MoiveList({genreId}) {
         })
     }
   return (
-   <div  className='flex overflow-x-auto gap-2 scrollbar-hide 
-             pt-5 px-3 pb-5  scroll-smooth' >
+   <div  className='flex  gap-2 scrollbar-hide 
+             pt-5 px-3 pb-5  ' >
                 {movieList.map((item) => (
                     <>
-                    <HrmovieCard movie={item} />
+                    <MovieCardHover movie={item} />
                     {/* <MovieCard movie={item} /> */}
                     
                    </>

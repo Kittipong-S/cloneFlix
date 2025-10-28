@@ -3,7 +3,7 @@ import MovieList from '../MovieList/MoiveList'
 
 function GenerMoiveList() {
   return (
-    <div>
+    <div className=''>
       {GeneresList.genere.map((item,index)=> index<4&&(
         <div className='p-2 px-8 md:px-16'>
             <h2 className='text-[20px] text-white font-bold'>{item.name}</h2>
