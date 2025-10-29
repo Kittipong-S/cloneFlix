@@ -3,10 +3,16 @@
 /* @import 'tailwind-scrollbar-hide/v4'; */
 
 body {
-  background-color: #030712;
+  background-color: #111827;
 }
 
 .navbarColor {
 background-color:#030712;
 
+}
+
+.brimage{
+  background-size: cover;
+  border-image: fill 0
+    linear-gradient(#0003,#000);
 }
