@@ -20,15 +20,19 @@ function Hotmovietoday() {
     })
 
   ]
-  console.log(movieList[0]);
+  console.log(movieList?.[3]);
+
 
   return (
     <div className=''>
       <div className='h-180 bg-gradient-to-b to-gray-600 relative '>
         <img src={IMAGE_BASE_URL + "https://image.tmdb.org/t/p/original/1leYKN0DPNffpldGnCWnbXaiWoD.jpg"} className='w-full object-cover ' />
-        <div className='absolute border border-amber-700 bottom-4 ml-18 mb-30 '>
-          <div className=''>
-asdasdasdasdsa
+        <div className='absolute  bottom-4 ml-18 mb-30 '>
+          <div className='text-white text-[65px]'>
+<h2>{movieList?.[3]?.title}</h2>
+          </div>
+          <div className='text-gray-50 font-bold text-[20px] w-[47vw] my-8'>
+<p>{movieList?.[3]?.overview}</p>
           </div>
           <div className='flex gap-5 '>
           <div className='flex justify-between gap-4  rounded-md  px-7  items-center bg-gray-100 hover:bg-gray-300 text-black cursor-pointer'>

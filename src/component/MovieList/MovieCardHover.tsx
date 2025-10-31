@@ -14,7 +14,7 @@ function MovieCardHover({ movie }) {
       group-hover: scale-110 group-hover:-translate-y-[6vw] group-hover:opacity-100">
           <img className="cursor-pointer object-cover trabsition duration-200 shadow-xl rounded-t-md w-full h-[12vw]" 
           src={IMAGE_BASE_URL + movie.backdrop_path} />
-          <div className=" z-10 bg-slate-950 p-2 lg:p-4 absolute w-full transition  shadow-md rounded-b-md border border-amber-50 h-[8vw] ">
+          <div className=" z-10 bg-slate-950 p-2 lg:p-4 absolute w-full transition  shadow-md rounded-b-md  h-[8vw] ">
             <div className="flex flex-row justify-between items-center gap-3">
               <div className="flex space-x-4">
                 <div className="cursor-pointer text-[20px] w-12 h-8 lg:w-12 lg:h-12 bg-gray-200  rounded-full flex justify-center items-center
