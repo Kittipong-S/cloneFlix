@@ -3,7 +3,7 @@
 
 import Navbar from './component/header/Navbar'
 import Hotmovietoday from './component/HotMovie/Hotmovietoday'
-import GenerMoiveList from './component/gener/GenerMoiveList'
+// import GenerMoiveList from './component/gener/GenerMoiveList'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
     <div >
     <Navbar/>
     <Hotmovietoday/>
-    <GenerMoiveList/>
+    {/* <GenerMoiveList/> */}
     
       {/* <div>
         <a href="https://vite.dev" target="_blank">

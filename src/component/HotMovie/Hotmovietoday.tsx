@@ -25,10 +25,10 @@ function Hotmovietoday() {
 
   return (
     <div className=''>
-      <div className='h-180 bg-gradient-to-b to-gray-600 relative '>
-        <img src={IMAGE_BASE_URL + "https://image.tmdb.org/t/p/original/1leYKN0DPNffpldGnCWnbXaiWoD.jpg"} className='w-full object-cover ' />
+      <div className='h-180  relative '>
+        <img src={IMAGE_BASE_URL + "https://image.tmdb.org/t/p/original/1leYKN0DPNffpldGnCWnbXaiWoD.jpg"} className='w-full  object-cover mask-b-from-30% mask-b-to-90% ' />
         <div className='absolute  bottom-4 ml-18 mb-30 '>
-          <div className='text-white text-[65px]'>
+          <div className='text-white text-[65px] '>
 <h2>{movieList?.[3]?.title}</h2>
           </div>
           <div className='text-gray-50 font-bold text-[20px] w-[47vw] my-8'>
