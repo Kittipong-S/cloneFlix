@@ -6,9 +6,14 @@ import { IoIosSearch } from "react-icons/io";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import Clove from '../../assets/image/clove.jpg'
 import { GoTriangleDown } from "react-icons/go";
+import { VscTriangleUp } from "react-icons/vsc";
+import { useState } from "react";
+
+
 
 
 function Navbar() {
+    const [showCard, setShowcard] = useState(false);
     const menu = [{
         name: 'หน้าหลัก',
         icon: HiHome
@@ -44,17 +49,35 @@ function Navbar() {
                         <Header name={item.name} icon={item.icon} />
                     ))}
                 </div>
+                <div className="flex text-[10px] md:hidden cursor-pointer justify-center  text-white" onMouseEnter={() => setShowcard(true)}
+                    onMouseLeave={() => setShowcard(false)}>
+                    <p className="font-bold">เรียกดู</p>
+                    <GoTriangleDown className="text-[18px] font-bold" />
+                    {showCard && <div className="absolute pt-15 opacity-80 ">
+                        
+                       <VscTriangleUp className="text-black text-[20px] "/>
+                     
+                        <div className="bg-slate-950 w-[35vw] h-[46vw] border-t-2 border-amber-50 ">
+                            {menu.map((item) => (
+                                <p className="text-center p-3 text-[13px] hover:bg-slate-900">{item.name}</p>
+                            ))}
+                        </div>
+                    </div>}
+
+
+                </div>
+
             </div>
             <div className="flex text-white pr-8 ">
                 <div className="gap-5 flex">
-                <IoIosSearch className="text-[35px] " />
-                <h3 className=" hidden lg:flex text-[15px]  p-2">มุมเด็ก</h3>
-                <IoMdNotificationsOutline className="text-[35px] " />
-                <img src={Clove} className="w   -[35px] h-[35px] rounded-md" />
-            </div>
-            <div className="p-2">
-            <GoTriangleDown className="text-[18px] "/>
-            </div>
+                    <IoIosSearch className="text-[35px] " />
+                    <h3 className=" hidden lg:flex text-[15px]  p-2">มุมเด็ก</h3>
+                    <IoMdNotificationsOutline className="text-[35px] " />
+                    <img src={Clove} className="w-[35px] h-[35px] rounded-md" />
+                </div>
+                <div className="p-2">
+                    <GoTriangleDown className="text-[18px] " />
+                </div>
             </div>
         </div>
     )
