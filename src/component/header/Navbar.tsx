@@ -7,6 +7,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import Clove from '../../assets/image/clove.jpg'
 import { GoTriangleDown } from "react-icons/go";
 import { VscTriangleUp } from "react-icons/vsc";
+import { GoTriangleUp } from "react-icons/go";
 import { useState } from "react";
 
 
@@ -14,6 +15,7 @@ import { useState } from "react";
 
 function Navbar() {
     const [showCard, setShowcard] = useState(false);
+    
     const menu = [{
         name: 'หน้าหลัก',
         icon: HiHome
@@ -54,10 +56,10 @@ function Navbar() {
                     <p className="font-bold">เรียกดู</p>
                     <GoTriangleDown className="text-[18px] font-bold" />
                     {showCard && <div className="absolute pt-15 opacity-80 ">
-                        
-                       <VscTriangleUp className="text-black text-[20px] "/>
-                     
-                        <div className="bg-slate-950 w-[35vw] h-[46vw] border-t-2 border-amber-50 ">
+                      
+                     <p className="flex justify-center "><VscTriangleUp className=" text-white text-[20px] "/></p>
+                        <div className="bg-slate-950 w-[35vw] h-[46vw] border-t-3 border-1 border-amber-50  ">
+                             
                             {menu.map((item) => (
                                 <p className="text-center p-3 text-[13px] hover:bg-slate-900">{item.name}</p>
                             ))}
@@ -75,8 +77,9 @@ function Navbar() {
                     <IoMdNotificationsOutline className="text-[35px] " />
                     <img src={Clove} className="w-[35px] h-[35px] rounded-md" />
                 </div>
-                <div className="p-2">
-                    <GoTriangleDown className="text-[18px] " />
+                <div className="p-2 cursor-pointer group ">
+                   <GoTriangleDown className="text-[18px] scale-y-100   group-hover:scale-y-0" />
+                    <GoTriangleUp className="text-[18px] scale-y-0   group-hover:scale-y-100"/>
                 </div>
             </div>
         </div>
