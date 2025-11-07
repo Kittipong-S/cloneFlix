@@ -25,27 +25,27 @@ function Hotmovietoday() {
 
   return (
     <div className=''>
-      <div className='h-180 md:h-160 lg:h-170 sm:h-140 xl:h-180 relative '>
+      <div className='h-30 md:h-100 lg:h-110 sm:h-70 xl:h-180 relative '>
         <img src={IMAGE_BASE_URL + "https://image.tmdb.org/t/p/original/" + movieList?.[3]?.backdrop_path} className='w-full  object-cover mask-b-from-30% mask-b-to-90% ' />
-        <div className='absolute  bottom-70 ml-18 mb-30 md:bottom-50 lg:bottom-3 sm:bottom-30'>
-          <div className='text-white text-[20px] lg:text-[65px] md:text-[35px] sm:[25]'>
+        <div className='absolute bottom-0 lg:bottom-0 ml-18 mb-0 md:bottom-10 lg:bottom-3 sm:bottom-10 '>
+          <div className='text-white text-[20px] lg:text-[55px] md:text-[35px] sm:[25]'>
             <h2>{movieList?.[3]?.title}</h2>
           </div>
-          <div className='text-gray-50 font-bold text-[10px] lg:text-[20px] md:text-[17px]  w-[47vw] my-8'>
+          <div className='text-gray-50 font-bold  xl:text-[20px] lg:text-[20px] md:text-[17px] sm:text-[10px]  max-sm:hidden w-[47vw] my-8'>
             <p>{movieList?.[3]?.overview}</p>
           </div>
-          <div className='flex gap-5 '>
-            <div className='flex justify-between gap-4  rounded-md  px-2 md:px-4 xl:px-7 lg:px-6 sm:px-3 items-center bg-gray-100 hover:bg-gray-300 text-black cursor-pointer '>
-              <div className='text-[20px] md:text-[20] xl:text-[28px] lg:text-[25] sm:text-[18]'>
+          <div className='flex gap-3  xl:h-[2.8vw] md:h-[4vw] h-[4vw]  relative'>
+            <div className='flex justify-center gap-3  rounded-lg   xl:px-7 lg:px-5 md:px-4 sm:px-3 px-3 items-center bg-gray-100 hover:bg-gray-300 text-black cursor-pointer '>
+              <div className='text-[15px]  md:text-[20px] xl:text-[28px] lg:text-[25px] sm:text-[15px] '>
                 <FaPlay />
               </div>
-              <p className='text-[25px]'>เล่น</p>
+              <p className='text-[10px] md:text-[15px] xl:text-[25px] lg:text-[24px] sm:text-[10px]'>เล่น</p>
             </div>
-            <div className='flex justify-between gap-5  rounded-md text-white p-3 items-center bg-gray-600/75 hover:bg-gray-600/50 cursor-pointer'>
-              <div className='text-[35px]'>
+            <div className='flex justify-center gap-3  rounded-lg text-white px-3 xl:px-7 lg:px-5 md:px-4 sm:px-3 items-center bg-gray-600/75 hover:bg-gray-600/50 cursor-pointer'>
+              <div className='text-[20px] md:text-[20px] xl:text-[35px] lg:text-[25px] sm:text-[20px]'>
                 <IoIosInformationCircleOutline />
               </div>
-              <p className='text-[25px]'>ข้อมูลเพิ่มเติม</p>
+              <p className='text-[10px] md:text-[15px] xl:text-[25px] lg:text-[24px] sm:text-[10px]'>ข้อมูลเพิ่มเติม</p>
             </div>
           </div>
         </div>

@@ -79,7 +79,7 @@ function Navbar() {
                 </div>
                 <div className="p-2 cursor-pointer group ">
                    <GoTriangleDown className="text-[18px] scale-y-100   group-hover:scale-y-0" />
-                    <GoTriangleUp className="text-[18px] scale-y-0   group-hover:scale-y-100"/>
+                    {/* <GoTriangleUp className="text-[18px] scale-y-0   group-hover:scale-y-100"/> */}
                 </div>
             </div>
         </div>
