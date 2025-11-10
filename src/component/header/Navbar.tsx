@@ -15,7 +15,7 @@ import { useState } from "react";
 
 function Navbar() {
     const [showCard, setShowcard] = useState(false);
-    
+
     const menu = [{
         name: 'หน้าหลัก',
         icon: HiHome
@@ -56,10 +56,10 @@ function Navbar() {
                     <p className="font-bold">เรียกดู</p>
                     <GoTriangleDown className="text-[18px] font-bold" />
                     {showCard && <div className="absolute pt-15 opacity-80 ">
-                      
-                     <p className="flex justify-center "><VscTriangleUp className=" text-white text-[20px] "/></p>
+
+                        <p className="flex justify-center "><VscTriangleUp className=" text-white text-[20px] " /></p>
                         <div className="bg-slate-950 w-[35vw] h-[46vw] border-t-3 border-1 border-amber-50  ">
-                             
+
                             {menu.map((item) => (
                                 <p className="text-center p-3 text-[13px] hover:bg-slate-900">{item.name}</p>
                             ))}
@@ -72,13 +72,13 @@ function Navbar() {
             </div>
             <div className="flex text-white pr-8 ">
                 <div className="gap-5 flex">
-                    <IoIosSearch className="text-[35px] " />
+                    <IoIosSearch className="text-[35px] max-sm:hidden" />
                     <h3 className=" hidden lg:flex text-[15px]  p-2">มุมเด็ก</h3>
                     <IoMdNotificationsOutline className="text-[35px] " />
                     <img src={Clove} className="w-[35px] h-[35px] rounded-md" />
                 </div>
                 <div className="p-2 cursor-pointer group ">
-                   <GoTriangleDown className="text-[18px] scale-y-100   group-hover:scale-y-0" />
+                    <GoTriangleDown className="text-[18px] scale-y-100   group-hover:scale-y-0" />
                     {/* <GoTriangleUp className="text-[18px] scale-y-0   group-hover:scale-y-100"/> */}
                 </div>
             </div>
